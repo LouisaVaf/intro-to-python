@@ -8,14 +8,20 @@
 
 ## Section A
 # 1. Read the file 'jabberwocky.txt' and print its content to the screen.
-
+#f = open("text_files/jabberwocky.txt", "r")
+#print(f.read())
 
 
 # 2. Read the file 'austen.txt' and print the amount of lines in the file.
-
+#f = open("text_files/austen.txt", "r")
+#count = 0
+#for x in f:
+#  count += 1
+#print(count)
 
 
 # 3. Each line of the file 'numbers.txt' contains a number, write a script to add up all the values in the file.
+#f = open("text_files/numbers.txt", "r")
 
 
 
@@ -24,6 +30,12 @@
 
 ## Section B
 # 1. Ask the user to enter their name and append this to a file called 'register.txt'.
+f = open("register.txt", "a")
+while name != "":
+  name = input("Enter your name: ")
+  f.write(input("Enter your name: "))
+f.close()
+
 
 
 
